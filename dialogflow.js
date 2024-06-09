@@ -104,15 +104,14 @@ app.post("/webhook", async (req, res) => {
             service: "gmail",
             auth: {
                 user: "muddussir1247@gmail.com",
-                pass: process.env.EMAIL_PASS ,
+                pass: process.env.EMAIL_PASS,
             },
         });
 
         var maillist = ["hammadn788@gmail.com", email]
         var mailOptions = {
             from: "mzainali1199@gmail.com",
-            to: "muddussir1248@gmail.com",
-            //   to: maillist,
+            to: maillist,
             subject: "SMIT Course",
             html: `
             <!DOCTYPE html>
@@ -346,6 +345,7 @@ app.post("/webhook", async (req, res) => {
     intentMap.set('studentData', studentData);
     agent.handleRequest(intentMap);
 })
+
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
 });
