@@ -53,7 +53,7 @@ app.use(cors());
 
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.post("/webhook", async (req, res) => {
     var id = (res.req.body.session).substr(43);
@@ -108,7 +108,6 @@ app.post("/webhook", async (req, res) => {
             },
         });
 
-        console.log(address);
         var maillist = ["hammadn788@gmail.com", email]
         var mailOptions = {
             from: "mzainali1199@gmail.com",
