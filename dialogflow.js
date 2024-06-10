@@ -80,13 +80,6 @@ app.post("/webhook", async (req, res) => {
         const DOB = `${day}-${month}-${year}`
 
 
-
-        const now = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const date = now.toLocaleDateString('en-US', options);
-        const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-
-
         agent.add(`Understood! Here's a response confirming enrollment without mentioning a specific course: 
 
       "Hello ${name.name}!
@@ -254,9 +247,6 @@ app.post("/webhook", async (req, res) => {
                         <p>Your Journey Begins Here</p>
                     </div>
                     <div class="content">
-                        <p><strong>Date: ${date}</strong> <span id="currentDate"></span> <strong>Time: ${time} </strong> <span
-                                id="currentTime"></span></p>
-                        <p>Dear ${name.name},</p>
                         <p>Congratulations! You have successfully enrolled in the following course. We are excited to have you on
                             board and look forward to helping you achieve your learning goals.</p>
                         <div class="address">
