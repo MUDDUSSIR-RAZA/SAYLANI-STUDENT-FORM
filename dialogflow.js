@@ -282,10 +282,10 @@ app.post("/webhook", async (req, res) => {
                                     <th>City</th>
                                     <td> ${city} </td>
                                 </tr>
-                                <tr>
-                                    <th>Address</th>
-                                    <td>${address['street-address']}</td>
-                                </tr>
+                                // <tr>
+                                //     <th>Address</th>
+                                //     <td>${address['street-address']}</td>
+                                // </tr>
                                 <tr>
                                     <th>NIC</th>
                                     <td>${nic}</td>
