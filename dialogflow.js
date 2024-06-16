@@ -103,7 +103,7 @@ app.post("/webhook", async (req, res) => {
 
         var maillist = ["hammadn788@gmail.com", email]
         var mailOptions = {
-            from: "mzainali1199@gmail.com",
+            from: "muddussir1247@gmail.com",
             to: maillist,
             subject: "SMIT Course",
             html: `
